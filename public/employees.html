@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#e7e5dc" />
+    <meta name="description" content="Playtime Co. employee access portal." />
+    <title>Employee Access | Playtime Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/employee.js" defer></script>
+  </head>
+  <body class="employee-mode">
+    <div class="announcement-bar"><span>PLAYTIME CO.</span><span class="announcement-separator" aria-hidden="true">✳</span><span>PERSONNEL SERVICES / INTERNAL</span></div>
+    <main class="employee-view">
+      <div class="employee-shell">
+        <header class="employee-header">
+          <a class="wordmark employee-wordmark" href="/">PLAYTIME<span>CO.</span></a>
+          <p class="employee-classification"><span class="classification-dot" aria-hidden="true"></span> PERSONNEL SERVICES / INTERNAL</p>
+          <a class="employee-back" href="/"><span aria-hidden="true">←</span> Visitor entrance</a>
+        </header>
+        <section class="login-panel" id="login-panel" aria-labelledby="login-title">
+          <div class="login-side">
+            <p class="eyebrow">Playtime Co. / employee services</p>
+            <h1 id="login-title">Good to<br /><span>see you.</span></h1>
+            <p class="login-intro">This terminal is for active Playtime Co. employees. Please verify your badge details to continue.</p>
+            <div class="login-stamp">INTERNAL<br />USE ONLY</div>
+          </div>
+          <form class="login-form" id="login-form">
+            <p class="form-label">SIGN IN TO PERSONNEL SERVICES</p>
+            <label for="employee-id">Employee ID</label>
+            <input id="employee-id" name="employeeId" autocomplete="username" required maxlength="80" />
+            <label for="employee-password">Password</label>
+            <input id="employee-password" name="password" type="password" autocomplete="current-password" required maxlength="128" />
+            <p class="login-error" id="login-error" role="alert" aria-live="polite"></p>
+            <button class="button button-red login-submit" type="submit"><span id="login-submit-label">Verify credentials</span><span aria-hidden="true">↗</span></button>
+            <button class="demo-access" id="fill-demo" type="button">Fill local demo credentials <span aria-hidden="true">+</span></button>
+            <p class="login-footnote">Lost your badge? Contact your floor supervisor. Do not share your credentials.</p>
+          </form>
+        </section>
+        <section class="personnel-dashboard" id="personnel-dashboard" hidden aria-labelledby="dashboard-title">
+          <div class="dashboard-topline"><span>PERSONNEL SERVICES / FLOOR 03</span><span id="dashboard-clearance">ACCESS VERIFIED</span></div>
+          <div class="dashboard-heading">
+            <div><p class="eyebrow">Shift record / <span id="dashboard-employee">employee</span></p><h1 id="dashboard-title">Welcome back,<br /><span>staff member.</span></h1></div>
+            <button class="logout-button" id="logout" type="button">Sign out <span aria-hidden="true">↗</span></button>
+          </div>
+          <article class="bulletin" aria-labelledby="bulletin-title">
+            <div class="bulletin-label"><span class="warning-mark" aria-hidden="true">!</span><span id="bulletin-label">SHIFT BULLETIN</span></div>
+            <div class="bulletin-content"><h2 id="bulletin-title"></h2><p id="bulletin-text"></p></div>
+            <span class="bulletin-index" aria-hidden="true">01</span>
+          </article>
+          <div class="records-heading"><div><p class="eyebrow">Your files</p><h2>Items requiring attention</h2></div><span class="records-count" id="records-count"></span></div>
+          <div class="records-list" id="records-list"></div>
+          <div class="dashboard-footer"><span>PLAYTIME CO. / PERSONNEL ARCHIVE</span><span>IF YOU SEE SOMETHING, TELL SOMEONE.</span></div>
+        </section>
+        <footer class="employee-footer"><span>AUTHORIZED PERSONNEL ONLY</span><span>© PLAYTIME CO. / KEEP YOUR BADGE VISIBLE</span></footer>
+      </div>
+    </main>
+  </body>
+</html>

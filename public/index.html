@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f6ed" />
+    <meta name="description" content="Step inside Playtime Co. Discover the Poppy Playtime chapters, explore the factory, and find your platform." />
+    <title>Playtime Co. | Poppy Playtime Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/catalog.js" defer></script>
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement-bar" aria-label="Company announcement">
+      <span>PLAYTIME CO.</span>
+      <span class="announcement-separator" aria-hidden="true">✳</span>
+      <span>MAKING PLAYTIME MEMORABLE SINCE 1930</span>
+      <span class="announcement-separator" aria-hidden="true">✳</span>
+      <span>PLEASE KEEP YOUR BADGE VISIBLE</span>
+    </div>
+
+    <div id="public-view">
+      <header class="site-header">
+        <a class="wordmark" href="/" aria-label="Playtime Co. home">PLAYTIME<span>CO.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#games">Games</a>
+          <a href="/platforms.html">Platforms</a>
+          <a href="/company.html">Company</a>
+        </nav>
+        <a class="employee-link" href="/employees.html">
+          <span class="employee-lock" aria-hidden="true">▣</span>
+          Employee access
+          <span aria-hidden="true">↗</span>
+        </a>
+      </header>
+
+      <main>
+        <section class="hero" id="top" aria-labelledby="hero-title">
+          <img class="hero-image" src="/images/chapter-1-screen.jpg" alt="The abandoned reception area inside the Playtime Co. factory" fetchpriority="high" />
+          <div class="hero-shade" aria-hidden="true"></div>
+          <div class="hero-content">
+            <p class="eyebrow hero-eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> The toy factory is waiting</p>
+            <h1 id="hero-title">PLAYTIME<br /><span>CO.</span></h1>
+            <p class="hero-copy">A world built for wonder. A factory with a story to tell. Find out what was left behind.</p>
+            <div class="hero-actions">
+              <a class="button button-yellow" href="#games">Explore the games <span aria-hidden="true">↓</span></a>
+              <a class="hero-text-link" href="#platforms">Choose your platform <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="hero-index"><span>VISITOR GUIDE</span><span>EST. 1930 / TOY DIVISION</span></div>
+          <a class="hero-scroll" href="#welcome" aria-label="Scroll to company welcome"><span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section class="welcome-strip" id="welcome" aria-labelledby="welcome-title">
+          <p class="eyebrow">A message from Playtime Co.</p>
+          <div class="welcome-copy">
+            <h2 id="welcome-title">We made the toys.<br /><span>Now follow their story.</span></h2>
+            <p>Five chapters take you through the factory, from the front doors to the places that were never meant for visitors. Take your time. Watch the corners.</p>
+          </div>
+          <span class="welcome-stamp" aria-hidden="true">OPEN<br />SINCE<br />1930</span>
+        </section>
+
+        <section class="chapters-section section-pad" id="games" aria-labelledby="chapters-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">The visitor's route</p>
+              <h2 id="chapters-title">Five games.<br /><span>One very long shift.</span></h2>
+            </div>
+            <p class="section-intro">Explore each game by its official title. Open a dedicated page for its story, artwork, and official store link.</p>
+          </div>
+          <div class="chapter-grid" id="chapter-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="platform-section" id="platforms" aria-labelledby="platforms-title">
+          <div class="platform-copy">
+            <p class="eyebrow">Take the tour</p>
+            <h2 id="platforms-title">Your next shift<br /><span>starts here.</span></h2>
+            <p>Choose an official storefront to find Poppy Playtime on your device. Availability varies by chapter and region.</p>
+          </div>
+          <div class="platform-list" id="platform-list">
+            <a href="https://store.steampowered.com/app/1721470/Poppy_Playtime/" target="_blank" rel="noopener noreferrer"><span class="platform-name"><span class="platform-number">01</span> Steam</span><span class="platform-action">Visit store ↗</span></a>
+            <a href="https://store.playstation.com/en-us/search/poppy%20playtime" target="_blank" rel="noopener noreferrer"><span class="platform-name"><span class="platform-number">02</span> PlayStation</span><span class="platform-action">Search store ↗</span></a>
+            <a href="https://www.xbox.com/en-US/search?q=poppy%20playtime" target="_blank" rel="noopener noreferrer"><span class="platform-name"><span class="platform-number">03</span> Xbox</span><span class="platform-action">Search store ↗</span></a>
+            <a href="https://www.nintendo.com/us/search/#q=Poppy%20Playtime&t=all" target="_blank" rel="noopener noreferrer"><span class="platform-name"><span class="platform-number">04</span> Nintendo Switch</span><span class="platform-action">Search store ↗</span></a>
+            <a href="https://apps.apple.com/us/app/poppy-playtime-chapter-1/id1610947489" target="_blank" rel="noopener noreferrer"><span class="platform-name"><span class="platform-number">05</span> iPhone &amp; iPad</span><span class="platform-action">App Store ↗</span></a>
+            <a href="https://play.google.com/store/search?q=poppy%20playtime&c=apps" target="_blank" rel="noopener noreferrer"><span class="platform-name"><span class="platform-number">06</span> Android</span><span class="platform-action">Google Play ↗</span></a>
+          </div>
+        </section>
+
+        <section class="company-section" id="about" aria-labelledby="company-title">
+          <div class="company-photo">
+            <img src="/images/chapter-3-screen.jpg" alt="A painted character mural in a forgotten factory room" loading="lazy" />
+            <span class="photo-caption">A familiar face on an unfamiliar wall.</span>
+          </div>
+          <div class="company-copy">
+            <p class="eyebrow">A Playtime Co. welcome</p>
+            <h2 id="company-title">Big smiles.<br /><span>Bigger mysteries.</span></h2>
+            <p>Playtime Co. built a place where imagination had no closing time. The factory is quiet now, but the story is only getting started.</p>
+            <a class="underlined-link" href="/company.html">Explore the company archive <span aria-hidden="true">→</span></a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="wordmark footer-wordmark" href="/">PLAYTIME<span>CO.</span></a>
+        <p>Artwork and game links sourced from official Mob Entertainment storefront listings. Poppy Playtime and related characters are trademarks of Mob Entertainment. This fan-made experience is not affiliated with or endorsed by Mob Entertainment.</p>
+        <a class="footer-access" href="/employees.html">Employee access <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+  </body>
+</html>
